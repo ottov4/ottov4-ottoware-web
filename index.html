@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTTOWARE😈</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #reproductor {
+            margin-top: 1px;
+            display: block;
+        }
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #161515;
+            color: #2c3e50;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #c0392b;
+        }
+
+        /* Encabezado principal */
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+
+        #description {
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+
+        /* Centro de contenido */
+        center {
+            margin: 20px 0;
+        }
+
+        /* Selección de idioma */
+        .language-container {
+            position: absolute;
+            top: 24px;
+            left: 790px;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 5px;
+            width: 150px;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 4px;
+            background-color: #3498db;
+        }
+
+        nav ul li a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilos de contenido */
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #080808;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h1 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            section h1 {
+                font-size: 1.2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Contenedor para la selección de idioma -->
+    <div class="language-container">
+        <label for="language" style="color: #000000;">SELECT A LANGUAGE:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="fr">Français</option>
+            <option value="po">Português</option>
+        </select>
+    </div>
+
+    <h1 id="title">OTTOWARE</h1>
+
+<!-- Menú pequeño de música -->
+<div id="music-menu" style="background-color: #333; padding: 10px; border-radius: 8px; color: #fff; width: 250px; text-align: center; margin: 20px auto;">
+    <h3 id="current-song-title">Canción actual: travis-scott</h3>
+    <audio id="music-player" controls style="width: 100%;">
+        <source id="music-source" src="travis-scott.me.mp3" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+    </audio>
+    <div style="margin-top: 10px;">
+        <button onclick="playMusic()">Reproducir</button>
+        <button onclick="pauseMusic()">Pausar</button>
+        <button onclick="nextSong()">Siguiente canción</button>
+    </div>
+</div>
+
+    <center>
+        <p id="description">FREE CHEATS NEVER DTC</p>
+    </center>
+
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="https://discord.gg/vwT26WA56s" target="_blank" id="discord-link">OTTOWARE DISCORD</a></li>
+            <li><a href="SOON" target="_blank" id="discord-link">MORE SOON</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="content">
+        <h1 id="subtitle">Versión en Español</h1>
+        <p id="intro-text">Tres cosas gratis por ahora</p>
+
+        <section id="spoofer">
+            <h1 id="spoofer-title">SPOOFER PERM</h1>
+            <p id="spoofer-text">El spoofer perm te permite jugar los juegos donde estás permanentemente baneado, sin necesidad de comprar otra PC.</p>
+        </section>
+
+        <section id="cheats">
+            <h1 id="cheats-title">Los mejores trucos gratis</h1>
+            <p id="cheats-text">El truco es FUD, pero podrías ser baneado por usar trucos de rage.</p>
+        </section>
+
+        <section id="temp-spoofer">
+            <h1 id="temp-spoofer-title">Spoofer Temp</h1>
+            <p id="temp-spoofer-text">Puedes jugar tu juego baneado por un tiempo limitado, gracias al spoofer temporal.</p>
+        </section>
+
+        <section id="banned">
+            <h2 id="banned-title">¿Te pueden banear?</h2>
+            <p id="banned-text">Depende de cómo lo uses. Puedes ser baneado por los anticheats de los juegos o por múltiples reportes.</p>
+        </section>
+
+        <footer>
+            <p id="footer-text">&copy; Web hecha por ottov2</p>
+        </footer>
+    </div>
+
+    <script>
+        // Contenido en diferentes idiomas
+        const translations = {
+            es: {
+                title: "OTTOWARE",
+                description: "CHEATS GRATIS NUNCA DTC",
+                discordLink: "OTTOWARE DISCORD",
+                subtitle: "Versión en Español",
+                introText: "Tres cosas gratis por ahora",
+                spooferTitle: "SPOOFER PERM",
+                spooferText: "El spoofer perm te permite jugar los juegos donde estás permanentemente baneado, sin necesidad de comprar otra PC.",
+                cheatsTitle: "Los mejores trucos gratis",
+                cheatsText: "El truco es FUD, pero podrías ser baneado por usar trucos de rage.",
+                tempSpooferTitle: "Spoofer Temp",
+                tempSpooferText: "Puedes jugar tu juego baneado por un tiempo limitado, gracias al spoofer temporal.",
+                bannedTitle: "¿Te pueden banear?",
+                bannedText: "Depende de cómo lo uses. Puedes ser baneado por los anticheats de los juegos o por múltiples reportes.",
+                footerText: "Web hecha por ottov2"
+            },
+            en: {
+                title: "OTTOWARE",
+                description: "FREE CHEATS NEVER DTC",
+                discordLink: "OTTOWARE DISCORD",
+                subtitle: "Version in English",
+                introText: "Three things for free right now",
+                spooferTitle: "PERM SPOOFER",
+                spooferText: "The perm spoofer allows you to play games where you are permanently banned, without the need to buy a new PC.",
+                cheatsTitle: "Best free cheats",
+                cheatsText: "The cheat is FUD, but you could be banned for using rage cheats.",
+                tempSpooferTitle: "Temp Spoofer",
+                tempSpooferText: "You can play your banned game for a limited time, thanks to the temp spoofer.",
+                bannedTitle: "Can you be banned?",
+                bannedText: "Depends on how you use it. You can be banned by game anticheats or multiple reports.",
+                footerText: "Website made by ottov2"
+            },
+            ru: {
+                title: "OTTOWARE",
+                description: "БЕСПЛАТНЫЕ ЧИТЫ НИКОГДА DTC",
+                discordLink: "OTTOWARE DISCORD",
+                subtitle: "Версия на русском",
+                introText: "Три бесплатных предложения прямо сейчас",
+                spooferTitle: "PERM SPOOFER",
+                spooferText: "Perm Spoofer позволяет играть в игры, где у вас постоянный бан, без необходимости покупать новый ПК.",
+                cheatsTitle: "Лучшие бесплатные читы",
+                cheatsText: "Этот чит FUD, но за использование rage читов вы можете быть забанены.",
+                tempSpooferTitle: "Временный Spoofer",
+                tempSpooferText: "Вы можете играть в вашу забаненную игру в течение ограниченного времени благодаря временному Spoofer.",
+                bannedTitle: "Можно ли получить бан?",
+                bannedText: "Зависит от того, как вы его используете. Вы можете быть забанены античитами игры или за многократные жалобы.",
+                footerText: "Сайт сделан ottov2"
+            },
+            fr: {
+                title: "OTTOWARE",
+                description: "CHEATS GRATUITS JAMAIS DTC",
+                discordLink: "OTTOWARE DISCORD",
+                subtitle: "Version en français",
+                introText: "Trois choses gratuites pour l'instant",
+                spooferTitle: "SPOOFER PERM",
+                spooferText: "Le spoofer perm vous permet de jouer à des jeux où vous êtes banni en permanence, sans avoir à acheter un autre PC.",
+                cheatsTitle: "Les meilleurs cheats gratuits",
+                cheatsText: "Le cheat est FUD, mais vous pourriez être banni en utilisant des cheats rage.",
+                tempSpooferTitle: "Spoofer Temporaire",
+                tempSpooferText: "Vous pouvez jouer à votre jeu banni pendant un temps limité, grâce au spoofer temporaire.",
+                bannedTitle: "Pouvez-vous être banni ?",
+                bannedText: "Cela dépend de la façon dont vous l'utilisez. Vous pouvez être banni par les anti-cheats des jeux ou par des signalements multiples.",
+                footerText: "Site réalisé par ottov2"
+            },
+            po: {
+                title: "OTTOWARE",
+                description: "CHEATS GRÁTIS NUNCA DTC",
+                discordLink: "OTTOWARE DISCORD",
+                subtitle: "Versão em Português",
+                introText: "Três coisas grátis agora mesmo",
+                spooferTitle: "SPOOFER PERMANENTE",
+                spooferText: "O spoofer perm permite que você jogue jogos onde você está permanentemente banido, sem precisar comprar outro PC.",
+                cheatsTitle: "Os melhores cheats grátis",
+                cheatsText: "O cheat é FUD, mas você pode ser banido por usar cheats de rage.",
+                tempSpooferTitle: "Spoofer Temporário",
+                tempSpooferText: "Você pode jogar seu jogo banido por um tempo limitado, graças ao spoofer temporário.",
+                bannedTitle: "Você pode ser banido?",
+                bannedText: "Depende de como você o utiliza. Você pode ser banido pelos anticheats dos jogos ou por múltiplos relatórios.",
+                footerText: "Site feito por ottov2"
+            }
+        };
+
+        function changeLanguage() {
+            const language = document.getElementById("language").value;
+            const translation = translations[language];
+
+            document.getElementById("title").innerText = translation.title;
+            document.getElementById("description").innerText = translation.description;
+            document.getElementById("discord-link").innerText = translation.discordLink;
+            document.getElementById("subtitle").innerText = translation.subtitle;
+            document.getElementById("intro-text").innerText = translation.introText;
+            document.getElementById("spoofer-title").innerText = translation.spooferTitle;
+            document.getElementById("spoofer-text").innerText = translation.spooferText;
+            document.getElementById("cheats-title").innerText = translation.cheatsTitle;
+            document.getElementById("cheats-text").innerText = translation.cheatsText;
+            document.getElementById("temp-spoofer-title").innerText = translation.tempSpooferTitle;
+            document.getElementById("temp-spoofer-text").innerText = translation.tempSpooferText;
+            document.getElementById("banned-title").innerText = translation.bannedTitle;
+            document.getElementById("banned-text").innerText = translation.bannedText;
+            document.getElementById("footer-text").innerText = translation.footerText;
+        }
+
+    // Lista de canciones
+    const songs = [
+        { title: "Travis Scott", file: "travis-scott.me.mp3" },
+        { title: "Post Malone", file: "post-malone.me.mp3" },
+        { title: "Mora Ansiedades", file: "mora-ansiedades.me.mp3" }
+    ];
+    let currentSongIndex = 0;
+
+    // Función para reproducir música
+    function playMusic() {
+        const player = document.getElementById("music-player");
+        player.play();
+    }
+
+    // Función para pausar música
+    function pauseMusic() {
+        const player = document.getElementById("music-player");
+        player.pause();
+    }
+
+    // Función para cambiar a la siguiente canción
+    function nextSong() {
+        currentSongIndex = (currentSongIndex + 1) % songs.length;  // Cambia al siguiente índice de canción
+        updateMusicPlayer();
+    }
+
+    // Actualiza el reproductor de música y el título de la canción
+    function updateMusicPlayer() {
+        const player = document.getElementById("music-player");
+        const source = document.getElementById("music-source");
+        const songTitle = document.getElementById("current-song-title");
+
+        source.src = songs[currentSongIndex].file;  // Cambia la fuente de la canción
+        songTitle.innerText = "Canción actual: " + songs[currentSongIndex].title;  // Cambia el título de la canción
+        player.load();  // Carga la nueva canción
+        player.play();  // Reproduce automáticamente la nueva canción
+    }
+    </script>
+</body>
+</html> 
